@@ -35,6 +35,7 @@ const Login = props =>{
                     />
                 </label>
                 <label>
+                    Password
                     <input 
                         type = 'password'
                         value = {val.password}

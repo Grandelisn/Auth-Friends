@@ -6,7 +6,7 @@ import AddFriend from './AddFriend'
 const GetFriends = () =>{
     const [friends, setFriends] = useState([]);
     const grabFriends = () =>{
-        axiosWithAuth.get('http://localhost:5000/api/friends')
+        axiosWithAuth().get('http://localhost:5000/api/friends')
         .then(res =>{
             console.log(res.data);
             setFriends(res.data);
